@@ -1,4 +1,4 @@
-import assign from 'assign-deep';
+var assign = require('assign-deep');
 
 function transformToSimple(object, prefix, newObject) {
   if (object) {
@@ -20,7 +20,7 @@ function transformToSimple(object, prefix, newObject) {
   }
 }
 
-export function transformNestedToSimple(object) {
+function transformNestedToSimple(object) {
   const newObject = {};
 
   transformToSimple(object, null, newObject);
@@ -46,7 +46,7 @@ function generateObj(names, value, newObject) {
   }
 }
 
-export function transformSimpleToNested(object) {
+function transformSimpleToNested(object) {
   let newObj = {};
 
   for (const fieldName in object) {
@@ -62,4 +62,9 @@ export function transformSimpleToNested(object) {
   }
 
   return newObj;
+}
+
+module.exports = {
+  transformNestedToSimple: transformNestedToSimple,
+  transformSimpleToNested: transformSimpleToNested
 }
