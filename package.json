@@ -1,0 +1,30 @@
+{
+  "name": "object-trans-util",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangdao/object-trans-util.git"
+  },
+  "keywords": [
+    "object"
+  ],
+  "author": "Dao Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangdao/object-trans-util/issues"
+  },
+  "homepage": "https://github.com/wangdao/object-trans-util#readme",
+  "dependencies": {
+    "assign-deep": "^0.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-react": "^4.3.0"
+  }
+}
