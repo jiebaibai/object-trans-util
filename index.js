@@ -65,6 +65,6 @@ function transformSimpleToNested(object) {
 }
 
 module.exports = {
-  transformNestedToSimple: transformNestedToSimple,
-  transformSimpleToNested: transformSimpleToNested
+    transformNestedToSimple: transformNestedToSimple,
+    transformSimpleToNested: transformSimpleToNested
 }
